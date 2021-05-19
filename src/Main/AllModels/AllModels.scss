@@ -1,0 +1,177 @@
+// Animate the size, inside
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+// Animate the size, outside
+.pulse:hover,
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff, 0);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+// Stack multiple shadows, one from the left, the other from the right
+.close:hover,
+.close:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+
+// Size can also be negative; see how it's smaller than the element
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+// Animating from the bottom
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+// And from the left
+
+// Multiple shadows, one on the outside, another on the inside
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+  }
+}
+
+//=== Set button colors
+// If you wonder why use Sass vars or CSS custom properties...
+// Make a map with the class names and matching colors
+$colors: (
+  fill: #a972cb,
+  pulse: #232323,
+  pulseM: #474747,
+  close: rgba(0, 0, 0, 0.7),
+  raise: #fff,
+  raiseW: #232323,
+  up: #e4cb58,
+  slide: #8fc866,
+  offset: #19bc8b,
+);
+
+// Sass variables compile to a static string; CSS variables are dynamic and inherited
+// Loop through the map and set CSS custom properties using Sass variables
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 45deg)};
+  }
+}
+
+.AllModels {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+  padding-top: 130px;
+}
+
+.AllModels__all {
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  // padding-top: 166px;
+  // padding-bottom: 14px;
+}
+.AllModels__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  min-height: 380px;
+  margin-bottom: 40px;
+  background: #232323;
+}
+
+.AllModels__name {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  padding-top: 26px;
+  padding-bottom: 30px;
+}
+
+.AllModels__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 84px;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.5);
+  border-top: 2px solid #292929;
+}
+
+.AllModels__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+  width: 150px;
+  height: 42px;
+  &:first-of-type {
+    border-bottom: 2px solid #292929;
+    border-right: 2px solid #292929;
+    background: url(../TwoModels/img/speed.svg) no-repeat 20% 50%;
+    padding-left: 45px;
+  }
+  &:nth-of-type(2) {
+    background: url(../TwoModels/img/seat.svg) no-repeat 20% 50%;
+  }
+  &:nth-of-type(3) {
+    background: #232322 url(../TwoModels/img/track.svg) no-repeat 20% 40%;
+  }
+  &:last-of-type {
+    background-color: #292929;
+    transition: all 0.2s ease-in-out;
+    padding-left: 0;
+
+    &:hover {
+      background-color: #3f3e3e;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+    }
+  }
+}
+.AllModels__item-link {
+  color: #ffffff;
+
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+.pulseM:hover,
+.pulseM:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff, 0);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}

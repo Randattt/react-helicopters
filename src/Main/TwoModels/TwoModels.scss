@@ -1,0 +1,221 @@
+.TwoModels {
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 100%;
+
+  color: #ffffff;
+  padding-top: 149px;
+
+  // background: url(./img/bg.png) no-repeat right bottom;
+}
+
+.TwoModels__model-container {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.TwoModels__model {
+  display: flex;
+  justify-content: space-between;
+  width: 780px;
+  height: 400px;
+  background: #232323;
+  margin-right: 41px;
+}
+
+.TwoModels__model_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 37px;
+  > img {
+    width: 446px;
+    height: 344px;
+  }
+}
+
+.TwoModels__name {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-left: 37px;
+}
+
+.TwoModels__list {
+  min-width: 261px;
+  border-left: 1px solid rgba(196, 196, 196, 0.05);
+}
+
+.TwoModels__item {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 40px;
+
+  padding-bottom: 40px;
+  text-align: center;
+
+  &:nth-of-type(1) {
+    background: url(./img/speed.svg) no-repeat 30% 50%;
+    border-bottom: 1px solid rgba(196, 196, 196, 0.05);
+    padding-left: 40px;
+  }
+  &:nth-of-type(2) {
+    background: url(./img/seat.svg) no-repeat 30% 50%;
+    border-bottom: 1px solid rgba(196, 196, 196, 0.05);
+    padding-left: 40px;
+  }
+  &:nth-of-type(3) {
+    background: url(./img/track.svg) no-repeat 30% 50%;
+    border-bottom: 1px solid rgba(196, 196, 196, 0.05);
+    padding-left: 40px;
+  }
+  &:nth-of-type(4) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.TwoModels__item_link {
+  display: block;
+  padding-top: 40px;
+  width: 100%;
+  padding-bottom: 42px;
+  text-align: center;
+
+  background: #292929;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    transition: 0.2s ease-in-out;
+    color: #ffffffa4;
+    background-color: #3f3e3e;
+  }
+}
+
+.TwoModels__text-btn {
+  max-width: 800px;
+}
+
+.TwoModels__main-slogan {
+  font-size: 36px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  > span {
+    font-weight: bold;
+    font-size: 56px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.TwoModels__info {
+  font-weight: 200;
+  font-size: 19px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  margin-bottom: 33px;
+}
+
+.TwoModels__btn-quest {
+  background: #ffffff;
+  color: #1b1b1b;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 20px 75px;
+  min-width: 360px;
+  margin-right: 40px;
+  border: 1px solid #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.TwoModels__btn-allmodels {
+  position: relative;
+  background: #1b1b1b;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 20px 75px;
+  border: 1px solid #ffffff;
+  min-width: 360px;
+  transition: all 0.2s ease-in-out;
+}
+
+// .TwoModels__btn-quest:hover .TwoModels__btn-allmodels {
+//   background: #ffffff;
+//   color: #1b1b1b;
+//   border: none;
+// }
+
+// .TwoModels__btn-quest:hover .TwoModels__btn-allmodels {
+//   background: #1b1b1b;
+//   color: #fff;
+//   border: 1px solid #ffffff;
+// }
+
+.TwoModels__controller {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 24px;
+
+  letter-spacing: 0.185em;
+
+  color: #353535;
+}
+
+.controller__item {
+  padding-top: 30px;
+  &:last-of-type {
+    padding-bottom: 30px;
+  }
+}
+
+.controller__item_active {
+  color: #fff;
+  transition: all 0.22s ease-in-out;
+}
+
+.controller__arrowR,
+.controller__arrowL {
+  cursor: pointer;
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  transition: all 0.2s ease-in-out;
+}
+
+.raiseW:hover,
+.raiseW:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  transition: all 0.2s ease-in-out;
+}

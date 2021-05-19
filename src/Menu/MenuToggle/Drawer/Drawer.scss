@@ -1,0 +1,93 @@
+.Drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  min-width: 620px;
+  background: linear-gradient(112.21deg, #1f1f1f 2.72%, #121212 101.59%);
+  transform: translateX(0);
+  transition: transform 0.22s ease-in-out;
+  border-right: 1px solid rgb(95, 94, 94);
+}
+
+.Drawer.close {
+  transform: translateX(-630px);
+}
+
+.Drawer__container {
+  position: relative;
+  padding: 42px 95px 51px 64px;
+}
+
+.Drawer__logo {
+  margin-bottom: 41px;
+}
+
+.Drawer__list_nav {
+  margin-bottom: 85px;
+}
+.Drawer__item_nav {
+  margin-bottom: 40px;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.Drawer__item_nav > a {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 100%;
+  /* or 20px */
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.Drawer__item_contacts {
+  margin-bottom: 30px;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:last-of-type:hover {
+    opacity: 1;
+  }
+}
+.Drawer__item_contacts > a,
+.Drawer__item_contacts {
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 100%;
+  /* or 20px */
+
+  letter-spacing: 0.1em;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.Drawer__logo {
+  font-weight: 200;
+
+  font-size: 12px;
+  line-height: 100%;
+  /* identical to box height, or 12px */
+
+  letter-spacing: 0.26em;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.Drawer__main {
+  margin-bottom: 7px;
+}
+
+.Drawer__hr {
+  position: absolute;
+  top: 661px;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  height: 2px;
+
+  background: #c4c4c426;
+}

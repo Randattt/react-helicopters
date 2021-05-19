@@ -1,0 +1,144 @@
+.Map {
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 100vh;
+
+  color: #ffffff;
+}
+
+.Map__container {
+  min-height: 100%;
+  display: flex;
+  padding-top: 140px;
+  justify-content: space-between;
+}
+
+.Map__container-for-map {
+  width: 900px;
+  height: 706px;
+  background: white url('./img/map.png') no-repeat center center;
+  background-size: cover;
+  color: white;
+  margin-bottom: 54px;
+}
+
+.Map__right {
+  max-width: 540px;
+  padding-top: 35px;
+}
+
+.Map__title {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  > span {
+    font-size: 30px;
+  }
+}
+.Map__radio_form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.Map__radio {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.55);
+
+  > label {
+    padding-left: 30px;
+    background: url(./img/radio.svg) no-repeat 0 80%;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  > input[type='radio'] {
+    display: none;
+  }
+}
+
+.Map__radio_1:checked {
+  ~ label {
+    color: #fff;
+    background: url(./img/radio-checked.svg) no-repeat 0 80%;
+    transition: 0.2s;
+  }
+}
+.Map__radio_2:checked {
+  ~ label {
+    color: #fff;
+    background: url(./img/radio-checked.svg) no-repeat 0 80%;
+    transition: 0.2s;
+  }
+}
+
+.Map__select_from,
+.Map__select_to {
+  background: #00000033;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  padding: 20px 22px;
+  min-width: 540px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.Map__select_label {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: #919191;
+  opacity: 0.5;
+}
+
+.Map__info-under-form {
+  width: 540px;
+  height: 80px;
+  background: #232323;
+  padding: 0 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  margin-bottom: 21px;
+}
+
+.Map__info-under-form_text_1 {
+  background: url(./img/helicopter.svg) no-repeat left center;
+  padding-left: 90px;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.Map__info-under-form_text_2 {
+  background: url(./img/Frame.svg) no-repeat left center;
+  padding-left: 90px;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.Map__foot_text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 20px;
+}

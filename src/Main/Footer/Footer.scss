@@ -1,0 +1,122 @@
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  height: 327px;
+  background: #181818;
+  padding: 52px 78px 44px 161px;
+}
+
+.Footer__catalog_lists {
+  display: flex;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 45px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.55);
+}
+.Footer__catalog_item {
+  > a {
+    color: rgba(255, 255, 255, 0.55);
+    &:hover {
+      color: rgba(255, 255, 255, 0.788);
+    }
+  }
+}
+.Footer__catalog_list-2 {
+  margin-left: 80px;
+}
+
+.Footer__catalog_title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  margin-bottom: 27px;
+}
+
+.Footer__menu {
+  display: flex;
+}
+.Footer__menu_2 {
+  margin-left: 120px;
+}
+.Footer__menu_item-dop {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 45px;
+  letter-spacing: 0.05em;
+}
+.Footer__menu_item {
+  > a {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    &:hover {
+      color: rgba(255, 255, 255, 0.788);
+    }
+  }
+}
+
+.Footer__menu_item-g {
+  > a {
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.55);
+  }
+}
+
+.Footer__slogan-form {
+  // max-width: 493px;
+}
+
+.Footer__slogan-form_be {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 180%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  > span {
+    font-weight: 200;
+  }
+}
+
+.Footer__slogan-form_sub {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 30px;
+}
+
+.Footer__slogan-form_input {
+  border: 1px solid #ffffff80;
+  background: #151515;
+  min-height: 60px;
+  min-width: 264px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.2);
+  padding-left: 31px;
+}
+
+.Footer__slogan-form_submit {
+  border: 1px solid #fff;
+  background: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #111111;
+  min-height: 60px;
+  min-width: 229px;
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,17 @@
+.News {
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 100%;
+
+  color: #ffffff;
+  margin-bottom: 160px;
+}
+
+.News__cards {
+  padding-top: 168px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -13px;
+}

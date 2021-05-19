@@ -1,0 +1,134 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 35px 80px 35px 160px;
+
+  position: fixed;
+  top: 0;
+  left: 0px;
+  right: 0px;
+
+  background: tranparant;
+  z-index: 98;
+  // .nav__logo
+  &__logo {
+    font-weight: 200;
+    text-align: center;
+
+    font-size: 12px;
+    line-height: 100%;
+    /* identical to box height, or 12px */
+
+    letter-spacing: 0.26em;
+
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  // .nav__list
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .nav__item
+
+  &__item {
+    margin-right: 60px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  // .nav__links
+
+  &__links {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: rgba(255, 255, 255, 0.5);
+    &:hover {
+      color: rgba(255, 255, 255, 0.788);
+    }
+  }
+
+  // .nav__right
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.logo {
+  // .logo__main
+
+  &__main {
+    margin-bottom: 6px;
+  }
+
+  // .logo__sub
+
+  &__sub {
+    padding-left: 1px;
+  }
+}
+.right {
+  // .right__switch
+
+  &__switch_2,
+  &__switch_1 {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+  }
+  &__switch_2 {
+    margin-right: 50px;
+    // .right__switch_eng
+
+    &_eng {
+    }
+
+    // .right__switch_rus
+
+    &_rus {
+    }
+  }
+
+  // .right__stats
+
+  &__stats {
+    background: transparent;
+    margin-right: 50px;
+  }
+
+  // .right__search
+
+  &__search {
+    background: transparent;
+  }
+}
+
+.bg {
+  background: linear-gradient(
+    90deg,
+    rgba(31, 31, 31, 1) 0%,
+    rgba(31, 31, 31, 1) 100%
+  );
+}
