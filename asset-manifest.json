@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-helicopters/static/css/main.37b5a749.chunk.css",
-    "main.js": "/react-helicopters/static/js/main.644c4209.chunk.js",
-    "main.js.map": "/react-helicopters/static/js/main.644c4209.chunk.js.map",
+    "main.css": "/react-helicopters/static/css/main.68fe8e46.chunk.css",
+    "main.js": "/react-helicopters/static/js/main.171317ac.chunk.js",
+    "main.js.map": "/react-helicopters/static/js/main.171317ac.chunk.js.map",
     "runtime-main.js": "/react-helicopters/static/js/runtime-main.4fcb1f0a.js",
     "runtime-main.js.map": "/react-helicopters/static/js/runtime-main.4fcb1f0a.js.map",
     "static/js/2.5204e7aa.chunk.js": "/react-helicopters/static/js/2.5204e7aa.chunk.js",
     "static/js/2.5204e7aa.chunk.js.map": "/react-helicopters/static/js/2.5204e7aa.chunk.js.map",
     "index.html": "/react-helicopters/index.html",
-    "static/css/main.37b5a749.chunk.css.map": "/react-helicopters/static/css/main.37b5a749.chunk.css.map",
+    "static/css/main.68fe8e46.chunk.css.map": "/react-helicopters/static/css/main.68fe8e46.chunk.css.map",
     "static/js/2.5204e7aa.chunk.js.LICENSE.txt": "/react-helicopters/static/js/2.5204e7aa.chunk.js.LICENSE.txt",
     "static/media/1.2554a4f1.png": "/react-helicopters/static/media/1.2554a4f1.png",
     "static/media/2.17e4b81e.png": "/react-helicopters/static/media/2.17e4b81e.png",
@@ -48,7 +48,7 @@
   "entrypoints": [
     "static/js/runtime-main.4fcb1f0a.js",
     "static/js/2.5204e7aa.chunk.js",
-    "static/css/main.37b5a749.chunk.css",
-    "static/js/main.644c4209.chunk.js"
+    "static/css/main.68fe8e46.chunk.css",
+    "static/js/main.171317ac.chunk.js"
   ]
 }
